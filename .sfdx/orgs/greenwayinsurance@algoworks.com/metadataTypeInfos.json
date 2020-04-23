@@ -1,5 +1,5 @@
 {
-    "sourceApiVersion": "48.0",
+    "sourceApiVersion": "47.0",
     "typeDefs": {
         "Audience": {
             "metadataName": "Audience",
