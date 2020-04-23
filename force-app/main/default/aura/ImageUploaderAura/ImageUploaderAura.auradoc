@@ -1,6 +1,21 @@
 <aura:documentation>
 	<aura:description>Documentation</aura:description>
 	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-		Example Description
+
+		You need to create two custom fields Picture Path(text) and picture
+
+		1) Picture Path 
+		Data type:  Text		
+		Field Label:  Picture Path		
+		Length:  255
+		Field Name  : Picture_Path__c
+
+		2) Picture
+		Data type:  Formula
+		Field Label: Picture
+		Field Name : Picture__c		
+		Formula Return Type:  Text	
+		Formula  : IMAGE(Picture_Path__c, "Product Image", 100, 100)
+		
 	</aura:example>
 </aura:documentation>
