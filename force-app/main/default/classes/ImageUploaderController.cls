@@ -3,7 +3,7 @@ public with sharing class ImageUploaderController {
 
     }
     @AuraEnabled
-    public static void uploadPicture(String recId, String objectName){
+    public static String uploadPicture(String recId, String objectName){
         
         //string objectName = 'Contact';
         System.Debug('This is the object name from the aura component and the rec ID' + objectName + ' ' + recId);
@@ -34,6 +34,8 @@ public with sharing class ImageUploaderController {
 
             upsert sobj;
         }
+
+        return 'success';
 
     }
 
